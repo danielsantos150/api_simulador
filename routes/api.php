@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\ConvenioController;
+use App\Http\Controllers\InstituicaoController;
+use App\Http\Controllers\SimuladorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(array('prefix' => 'v1'), function()
+{
+    Route::get('/', function () {
+        return response()->json(['code' => 200, 'status' => 'Sucesso', 'message' => 'Conectado na API Simulador']);
+    });
+    Route::get('/instituicoes', [InstituicaoController::class, 'index']);
+    Route::get('/convenios', [ConvenioController::class, 'index']);
+    Route::post('/simulador', [SimuladorController::class, 'simulador']);
+});
+
+Route::fallback(function() {
+    return response()->json(['code' => 404, 'status' => 'Não encontrado.', 'message' => 'Ops... página ou recurso não encontrado.'], 404);
 });
