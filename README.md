@@ -23,9 +23,14 @@ Abaixo segue o passo a passo para executar o projeto e realizar os testes
         - "\storage\app\public\simulador\taxas_instituicoes.json"
     - Dito isso, por gentileza ao realizar o download do sistema para a sua máquina, mova também os arquivos, obrigado.
 
-#### Rotas e Funcionalidades
+#### Rotas
 
 - Documentação das Rotas:
     - https://documenter.getpostman.com/view/9534004/UV5TFKg4
+    - Lista de Rotas:
+        - api/v1
+        - api/v1/convenios
+        - api/v1/instituicoes
+        - api/v1/simulador
 
 
