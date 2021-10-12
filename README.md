@@ -21,6 +21,7 @@ Abaixo segue o passo a passo para executar o projeto e realizar os testes
         - "\storage\app\public\simulador\convenios.json"
         - "\storage\app\public\simulador\instituicoes.json"
         - "\storage\app\public\simulador\taxas_instituicoes.json"
+    - Dito isso, por gentileza ao realizar o download do sistema para a sua máquina, mova também os arquivos, obrigado.
 
 #### Rotas e Funcionalidades
 
