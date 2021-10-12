@@ -24,15 +24,4 @@ class InstituicaoController extends Controller
             return $this->error('Arquivo \'instituicoes.json\' não encontrado.', 404);
         }
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
 }
